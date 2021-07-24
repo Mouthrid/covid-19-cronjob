@@ -1,3 +1,3 @@
 #run python script every minutes
-* * * * * python /app/hello.py > /proc/1/fd/1 2>/proc/1/fd/2
-
+*/15 13-20 * * * python3 /app/covid-19_crawler/main.py video >> /app/logs/video.log
+00 07-24 * * * python3 /app/covid-19_crawler/main.py news >> /app/logs/news.log
