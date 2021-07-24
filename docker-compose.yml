@@ -7,8 +7,8 @@ services:
     environment:
       HOST_IP: covid19-backend
     volumes:
-	  - ./app/covid-19_crawler:/app/covid-19_crawler
-	  - ./logs:/app/logs
+      - ./app/covid-19_crawler:/app/covid-19_crawler
+      - ./logs:/app/logs
     networks:
       - covid19_java
 
