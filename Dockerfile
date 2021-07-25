@@ -6,7 +6,7 @@ COPY crontab /etc/cron.d/crontab
 
 COPY ./app/covid-19_crawler /app/covid-19_crawler
 
-RUN pip3 install -r /app/covid-19_crawler/requirements.txt
+RUN pip install -r /app/covid-19_crawler/requirements.txt
 
 RUN chmod 0644 /etc/cron.d/crontab
 RUN /usr/bin/crontab /etc/cron.d/crontab
