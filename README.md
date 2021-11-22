@@ -19,7 +19,7 @@ $ docker-compose down
 
 # Environment Variables
 
-docker/crawler.env
+docker/env/crawler.env
 ```
 APP_KEY= # backend app_key
 youtube_api_key= # apply from gooel api
