@@ -16,3 +16,11 @@ $ docker-compose stop
 # DELETE
 $ docker-compose down
 ```
+
+# Environment Variables
+
+docker/crawler.env
+```
+APP_KEY= # backend app_key
+youtube_api_key= # apply from gooel api
+```
