@@ -17,10 +17,8 @@ $ docker-compose stop
 $ docker-compose down
 ```
 
-# Environment Variables
+# Build image
 
-docker/env/crawler.env
 ```
-APP_KEY= # backend app_key
-youtube_api_key= # apply from gooel api
+docker build -f docker/Dockerfile --build-arg HOST_IP=[backend_api_ip] --build-arg APP_KEY=[backend_app_key] --build-arg YT_API_KEY=[youtube_api_key] -t covid19-cronjob-dev:latest .
 ```

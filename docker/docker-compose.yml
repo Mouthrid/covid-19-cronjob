@@ -2,12 +2,8 @@ version: '3'
 services:
   cronjob:
     container_name: covid19-web_crawler-dev
-    build: .
+    image: covid19-cronjob-dev:latest
     restart: unless-stopped
-    env_file:
-      - docker/env/crawler.env
-    environment:
-      HOST_IP: covid19-backend-dev
     volumes:
       - ./logs:/app/logs
     networks:
@@ -16,3 +12,4 @@ services:
 networks:
   covid19-backend-dev:
     external: true
+
