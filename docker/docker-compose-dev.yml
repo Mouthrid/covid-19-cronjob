@@ -1,0 +1,15 @@
+version: '3'
+services:
+  cronjob:
+    container_name: covid19-web_crawler-dev
+    image: covid19-cronjob-dev:latest
+    restart: unless-stopped
+    volumes:
+      - ./logs:/app/logs
+    networks:
+      - covid19-backend-dev
+
+networks:
+  covid19-backend-dev:
+    external: true
+

@@ -1,3 +1,5 @@
 app/
 logs/
 *.env
+__py*
+build_image.sh

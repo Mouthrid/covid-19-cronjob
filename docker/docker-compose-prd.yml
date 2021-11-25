@@ -1,0 +1,15 @@
+version: '3'
+services:
+  cronjob:
+    container_name: covid19-web_crawler-prd
+    image: covid19-cronjob-prd:latest
+    restart: unless-stopped
+    volumes:
+      - ./logs:/app/logs
+    networks:
+      - covid19-backend-prd
+
+networks:
+  covid19-backend-prd:
+    external: true
+
