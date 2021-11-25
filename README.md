@@ -17,7 +17,7 @@ $ docker-compose [COMMAND]
 # down       Stop and remove containers, networks, images, and volumes
 
 # RUN
-$ docker-compose up --build -d
+$ docker-compose -f docker/docker-compose-dev.yml up -d
 # STOP
 $ docker-compose stop
 # DELETE
