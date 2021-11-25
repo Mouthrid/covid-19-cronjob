@@ -1,5 +1,12 @@
 # docker-python-cronjob
 
+Build image
+
+```
+docker build -f docker/Dockerfile --build-arg HOST_IP=[backend_api_ip] --build-arg APP_KEY=[backend_app_key] --build-arg YT_API_KEY=[youtube_api_key] -t covid19-cronjob-dev:latest .
+```
+
+
 The cronjob for executing web crawler regularly.
 
 ```bash
@@ -17,8 +24,3 @@ $ docker-compose stop
 $ docker-compose down
 ```
 
-# Build image
-
-```
-docker build -f docker/Dockerfile --build-arg HOST_IP=[backend_api_ip] --build-arg APP_KEY=[backend_app_key] --build-arg YT_API_KEY=[youtube_api_key] -t covid19-cronjob-dev:latest .
-```
