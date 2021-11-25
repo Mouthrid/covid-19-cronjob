@@ -21,7 +21,7 @@ def main():
     pattern = 'var ytInitialData'
     ip = f'{os.getenv("HOST_IP")}:8080'
     keywords = ('記者會', '說明')
-    reject_words = ('氣象',)
+    reject_words = ('氣象', '經濟', '治安')
 
     logging.basicConfig(format='[%(asctime)s][%(levelname)s] %(message)s',
                         datefmt='%m/%d/%Y %H:%M:%S')
